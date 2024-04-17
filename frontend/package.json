@@ -1,0 +1,25 @@
+{
+  "name": "jaque",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@internationalized/date": "^3.5.2",
+    "@nextui-org/react": "^2.3.1",
+    "@react-aria/i18n": "^3.10.2",
+    "framer-motion": "^11.1.1",
+    "moment": "^2.30.1",
+    "next": "14.2.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px; /* Adjust based on the height of your nav bar */
+}
+
+header, nav {
+    background-color: #3e5267; /* Darker shade for header/nav */
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure nav is above other content */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.date-selection {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #92b5db;
+}
+
+main {
+    flex-grow: 1;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.date-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+input[type="date"], button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#data-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#chart {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+/* Ensure that chart and table are properly sized on smaller screens
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    .date-selection {
+        flex-direction: column;
+    }
+} */

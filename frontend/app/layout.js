@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-              Thank you
+              <h3 color="foreground" bac>All the rights reserved</h3>
             </footer>
           </div>
         </Providers>

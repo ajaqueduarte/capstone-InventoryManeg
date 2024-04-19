@@ -5,7 +5,7 @@ import numpy as np
 
 
 # Define the forecast_sales function to perform forecasting on the cleaned data
-def forecast_sales(dataframe, start_date, end_date, future_days=2):
+def forecast_sales(dataframe, start_date, end_date, future_days):
     all_forecasts = pd.DataFrame()
     products = dataframe.columns.tolist()
 

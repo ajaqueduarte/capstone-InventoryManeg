@@ -25,6 +25,7 @@ class ForecastRequest(BaseModel):
     end_day: int = Field(..., ge=1, le=31)
     month: int = Field(..., ge=1, le=12)
     year: int = Field(..., ge=2020)
+    future_days: int = Field(..., ge=1)  # New field for future days
 
 # Define endpoint for generating forecast
 @app.post("/forecast/")
@@ -35,7 +36,7 @@ async def generate_forecast(request: ForecastRequest):
         forecast_end_date = date(request.year, request.month, request.end_day)
         
         # Generate forecast using cleaned_data
-        forecasted_data = forecast_sales(cleaned_data, forecast_start_date, forecast_end_date)
+        forecasted_data = forecast_sales(cleaned_data, forecast_start_date, forecast_end_date, request.future_days)  # Pass future_days parameter
         
         # Convert forecasted data to JSON or suitable format for your front-end
         forecasted_json = forecasted_data.to_json(orient='split')

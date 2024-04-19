@@ -16,36 +16,24 @@ Installation
 
 A step-by-step series of examples that tell you how to get a development environment running:
 
-Clone the repository
+1. Clone the repository
+git clone https://github.com/ajaqueduarte/capstone-InventoryManeg.git
+cd capstone-InventoryManeg
 
-git clone https://github.com/your-username/your-project-name.git
-cd your-project-name
+2. Set up a virtual environment (Optional but recommended):
 
- Set up a virtual environment (Optional but recommended):
-     For Windows:
-
-     bash
+For Windows:
 python -m venv venv .\venv\Scripts\activate
 
 For macOS and Linux:
-
-bash
-
 python3 -m venv venv
 source venv/bin/activate
 Install required packages:
 
-bash
-
+3. Install all the necessary dependencies, including FastAPI, Uvicorn, pandas, Prophet, and others.
 pip install -r requirements.txt
 
-This command will install all the necessary dependencies, including FastAPI, Uvicorn, pandas, Prophet, and any others defined in your requirements.txt.
-Running the Application
-
-To run the application, use the following command:
-
-bash
-
+4. To run the application, use the following command:
 uvicorn main:app --reload
 
 This command starts the Uvicorn server with live reloading enabled. Accessing the Application

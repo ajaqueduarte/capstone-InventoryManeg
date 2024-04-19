@@ -25,12 +25,12 @@ const Header = () => {
               </Link>
             </NavbarItem>
             <NavbarItem >
-              <Link href="#" aria-current="page" color="foreground">
+              <Link href="/recipes" aria-current="page" color="foreground">
                 Recipes
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link color="foreground" href="#">
+              <Link color="foreground" href="/inventory">
                 Inventory
               </Link>
             </NavbarItem>

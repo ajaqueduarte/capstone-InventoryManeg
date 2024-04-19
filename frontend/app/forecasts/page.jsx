@@ -21,7 +21,7 @@ export default function App() {
   const onSubmit = async () => {
     try {
       setLoading(true);
-      const response = await fetch("/api", {
+      const response = await fetch("/api/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

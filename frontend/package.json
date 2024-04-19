@@ -9,8 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@internationalized/date": "^3.5.2",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
     "@nextui-org/react": "^2.3.1",
+    "@nextui-org/system": "^2.1.2",
+    "@nextui-org/tabs": "^2.0.29",
+    "@nextui-org/theme": "^2.2.2",
     "@react-aria/i18n": "^3.10.2",
     "framer-motion": "^11.1.1",
     "moment": "^2.30.1",
